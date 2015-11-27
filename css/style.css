@@ -30,7 +30,7 @@ html {
     box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0,0,0,0.2);
 }
 
-.top span#clear {
+#clear {
     float: left;
 }
 
@@ -60,7 +60,7 @@ html {
 .keys, .top {overflow: hidden;}
 
 /* Applying css on all the keys */
-.keys span, .top span#clear {
+.keys span, #clear {
     float: left;
     position: relative;
     top: 0;
@@ -98,7 +98,7 @@ html {
     color: #888e5f;
 }
 
-.top span#clear {
+#clear {
     background: #ff9fa8;
     box-shadow: 0px 4px #ff7c87;
     color: white;
@@ -117,7 +117,7 @@ html {
     color: #ffffff;
 }
 
-.top span#clear:hover {
+#clear:hover {
     background: #f68991;
     box-shadow: 0px 4px #d3545d;
     color: white;
@@ -134,7 +134,7 @@ html {
     top: 4px;
 }
 
-.top span#clear:active {
+#clear:active {
     top: 4px;
     box-shadow: 0px 0px #d3545d;
 }
