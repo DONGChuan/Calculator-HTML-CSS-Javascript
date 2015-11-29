@@ -30,10 +30,6 @@ html {
     box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0,0,0,0.2);
 }
 
-#clear {
-    float: left;
-}
-
 #screen {
     float: right;
 
@@ -56,8 +52,10 @@ html {
     letter-spacing: 1px;
 }
 
-/* Clear floats */
-.keys, .top {overflow: hidden;}
+/* Clear Floats to make sure #calculator includes them correctly */
+.keys, .top {
+    overflow: hidden;
+}
 
 /* Applying css on all the keys */
 .keys span, #clear {
@@ -92,23 +90,11 @@ html {
     margin-right: 0; /* 7px in previous setting*/
 }
 
+/* Eval Button */
 .keys span.eval {
     background: #f1ff92;
     box-shadow: 0px 4px #9da853;
     color: #888e5f;
-}
-
-#clear {
-    background: #ff9fa8;
-    box-shadow: 0px 4px #ff7c87;
-    color: white;
-}
-
-/* Some hover effects */
-.keys span:hover {
-    background: #9c89f6;
-    box-shadow: 0px 4px #6b54d3;
-    color: white;
 }
 
 .keys span.eval:hover {
@@ -117,24 +103,37 @@ html {
     color: #ffffff;
 }
 
+.keys span.eval:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+/* Clear Button */
+#clear {
+    background: #ff9fa8;
+    box-shadow: 0px 4px #ff7c87;
+    color: white;
+}
+
 #clear:hover {
     background: #f68991;
     box-shadow: 0px 4px #d3545d;
     color: white;
 }
 
-/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
-.keys span:active {
-    box-shadow: 0px 0px #6b54d3;
-    top: 4px;
-}
-
-.keys span.eval:active {
-    box-shadow: 0px 0px #717a33;
-    top: 4px;
-}
-
 #clear:active {
     top: 4px;
     box-shadow: 0px 0px #d3545d;
+}
+
+/* Other Buttons */
+.keys span:hover {
+    background: #9c89f6;
+    box-shadow: 0px 4px #6b54d3;
+    color: white;
+}
+
+.keys span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
 }
