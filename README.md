@@ -6,4 +6,4 @@ I made this simple web application aiming to learn front-end technologie.
 
 ## Screenshots
 
-![screen-shot][https://github.com/DONGChuan/Calculator-HTML-CSS-Javascript/blob/master/images/screenshot.png]
+![screen-shot](https://github.com/DONGChuan/Calculator-HTML-CSS-Javascript/blob/master/images/screenshot.png)
